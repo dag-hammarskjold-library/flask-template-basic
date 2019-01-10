@@ -7,6 +7,8 @@ class Config(object):
     # how many results per page
     RPP = 10
 
+    # If you need to access other AWS resources from within your application,
+    # define your access credentials here.
     AWS_ACCESS_KEY_ID = 'your key here'
     AWS_SECRET_ACCESS_KEY = 'your secret access key here'
 
@@ -20,10 +22,6 @@ class Config(object):
     )
 
     DB = DB_CLIENT['database']
-
-    EN_FEED_URL = 'https://www.un.org/press/en/feed'
-
-    UPDATE_TOKEN = 'generate a UUID and put it here'
     
 class ProductionConfig(Config):
     DEBUG = False
