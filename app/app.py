@@ -12,6 +12,6 @@ collection = Config.DB.pressReleases
 # them in other files and import.
 
 # And start building your routes.
-@app.route('/)
+@app.route('/')
 def index():
     return(render_template('index.html', data=return_data))
