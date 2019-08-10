@@ -1,7 +1,6 @@
 {
     "dev": {
         "app_function": "app.app.app",
-        "profile_name": "default-or-replaceme",
         "project_name": "sample",
         "runtime": "python3.6",
         "s3_bucket": "my-bucket",
