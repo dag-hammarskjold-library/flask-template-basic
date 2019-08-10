@@ -34,7 +34,7 @@ class Config(object):
     RPP = 10
 
     client = boto3.client('ssm')
-    connect_string = client.get_parameter('connect-string')['Parameter']['Value']
+    connect_string = client.get_parameter(Name='connect-string')['Parameter']['Value']
 
     DB = DB.connect(connect_string)
     
