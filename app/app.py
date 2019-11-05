@@ -6,11 +6,11 @@ import boto3, re, time, os, pymongo
 
 # Initialize your application.
 app = Flask(__name__)
-collection = Config.DB.pressReleases
+collection = Config.DB.bibs
 
 # Define any classes you want to use here, or you could put
 # them in other files and import.
-
+return_data=""
 # And start building your routes.
 @app.route('/')
 def index():
