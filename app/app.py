@@ -1,3 +1,4 @@
+import json
 from flask import Flask, render_template, request, abort, jsonify, Response, url_for
 from requests import get
 from bson.objectid import ObjectId
@@ -15,3 +16,8 @@ return_data=""
 @app.route('/')
 def index():
     return(render_template('index.html', data=return_data))
+
+@app.route('/foo')
+def foo():
+    # This is a new route!
+    return(jsonify({"bar": "baz"}))
