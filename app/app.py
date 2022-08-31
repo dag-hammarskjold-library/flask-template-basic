@@ -20,4 +20,4 @@ def index():
 @app.route('/foo')
 def foo():
     # This is a new route!
-    return(jsonify({"bar": "baz"}))
+    return(jsonify({"foo": "bar"}))
