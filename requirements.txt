@@ -1,4 +1,4 @@
-﻿argcomplete==1.9.3
+argcomplete==1.9.3
 boto3==1.9.81
 botocore==1.12.81
 certifi==2024.7.4
@@ -30,7 +30,7 @@ toml==0.10.0
 tqdm==4.66.3
 troposphere==2.4.1
 Unidecode==1.0.23
-urllib3==2.5.0
+urllib3==2.6.3
 Werkzeug==3.1.4
 wsgi-request-logger==0.4.6
 zappa==0.47.1
